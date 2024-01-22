@@ -52,7 +52,7 @@ app.layout = html.Div(
 )
 #TASK 2.4: Creating Callbacks
 # Define the callback function to update the input container based on the selected statistics
-'''@app.callback(
+@app.callback(
     Output(component_id='output-container', component_property='children'),
     Input(component_id='dropdown-statistics',component_property='value'))
 
@@ -60,7 +60,7 @@ def update_input_container(dropdownstatistics):
     if dropdownstatistics =='Yearly Statistics':
         return False
     else:
-        return True'''
+        return True
 
 #Callback for plotting
 # Define the callback function to update the input container based on the selected statistics
